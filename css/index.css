@@ -1,0 +1,17 @@
+@import url(header/header.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    width: 100%;
+
+    background-color: aqua;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: calc(12px + 0.3vw); */
+}
