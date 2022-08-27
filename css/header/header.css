@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
 
-    background-color: #f8f8f8;
+    background-color: var(--color-light-gray);
 }
 
 .list {
@@ -34,8 +34,6 @@
     align-items: center;
     margin-left: 10px;
 
-    font-size: 20px;
-
     height: fit-content;
     transition: all linear 0.2s;
 }
@@ -48,8 +46,6 @@
 .list__item {
     display: flex;
     align-items: center;
-
-    font-size: 20px;
 }
 
 .list__item:hover {

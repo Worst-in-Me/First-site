@@ -1,4 +1,10 @@
+@import url(vars/colors/colors.css);
+@import url(vars/text.css);
+
+@import url(button/button.css);
+
 @import url(header/header.css);
+@import url(main/main.css);
 
 body {
     margin: 0;
@@ -8,7 +14,7 @@ body {
 
     width: 100%;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 html {
