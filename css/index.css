@@ -5,6 +5,7 @@
 
 @import url(header/header.css);
 @import url(main/main.css);
+@import url(popular/popular.css);
 
 body {
     margin: 0;
