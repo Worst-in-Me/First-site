@@ -1,0 +1,10 @@
+.headline {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.headline__headliner {
+    margin-bottom: 20px;   
+}

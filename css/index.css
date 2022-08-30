@@ -2,10 +2,13 @@
 @import url(vars/text.css);
 
 @import url(button/button.css);
+@import url(headline/headline.css);
 
 @import url(header/header.css);
 @import url(main/main.css);
 @import url(popular/popular.css);
+@import url(about/about.css);
+@import url(why/why.css);
 
 body {
     margin: 0;

@@ -5,7 +5,7 @@
 }
 
 .popular__card {
-    width: 320px;
+    width: 380px;
     height: 500px;
 
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
@@ -18,7 +18,7 @@
 }
 
 .popular__card:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 .popular__card-img {
@@ -35,4 +35,6 @@
 
 .popular__card-description {
     text-align: center;
+
+    width: 20vw;
 }
