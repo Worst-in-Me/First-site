@@ -1,0 +1,35 @@
+.special__cards {
+    width: 76vw;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.special__card {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.special__card div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.special__card-img {
+    width: 365px;
+    height: auto;
+}
+
+.special__card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.special__card-description {
+    width: 20vw;
+    text-align: center;
+}

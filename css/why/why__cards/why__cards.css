@@ -7,6 +7,8 @@
 .why__card {
     width: 365px;
     height: 330px;
+    
+    margin-top: 30px;
 
     background-color: var(--color-white);
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
