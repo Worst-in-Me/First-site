@@ -1,0 +1,24 @@
+@import url(application__form.css);
+
+.application {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../../image/MNJfj0irtjM.jpg);
+}
+
+.application__headline {
+    color: var(--color-white);
+    width: 49vw;
+    margin-right: 20px;
+}
+
+.application__headline-title {
+    margin-bottom: 40px;
+}

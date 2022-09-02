@@ -10,6 +10,7 @@
 @import url(about/about.css);
 @import url(why/why.css);
 @import url(special/special.css);
+@import url(application/application.css);
 
 body {
     margin: 0;
