@@ -1,0 +1,14 @@
+@import url(./shoplist__cards/shoplist__cards.css);
+
+.shoplist {
+    width: 100%;
+
+    padding-bottom: 90px;
+    padding-top: 90px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    background-color: var(--color-light-gray);
+}

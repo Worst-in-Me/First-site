@@ -1,0 +1,18 @@
+.oplata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.oplata__container {
+    width: 58vw;
+}
+
+.oplata__container:not(:last-child) {
+    margin-top: 60px;
+}

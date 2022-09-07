@@ -11,6 +11,8 @@
 @import url(why/why.css);
 @import url(special/special.css);
 @import url(application/application.css);
+@import url(shoplist/shoplist.css);
+@import url(oplata/oplata.css);
 
 body {
     margin: 0;

@@ -1,0 +1,39 @@
+.shoplist__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: auto;
+    gap: 20px;
+
+    margin-top: 10px;
+}
+
+.shoplist__card {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--color-white);
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+
+    padding: 40px;
+}
+
+.shoplist__card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.shoplist__card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.shoplist__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 15vw;
+    margin-left: 20px;
+}
