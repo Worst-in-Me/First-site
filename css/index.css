@@ -13,6 +13,10 @@
 @import url(application/application.css);
 @import url(shoplist/shoplist.css);
 @import url(oplata/oplata.css);
+@import url(review/review.css);
+@import url(form_question/form_question.css);
+@import url(contacts/contacts.css);
+@import url(footer/footer.css);
 
 body {
     margin: 0;
@@ -29,3 +33,4 @@ html {
     font-family: 'Open Sans', sans-serif;
     /* font-size: calc(12px + 0.3vw); */
 }
+

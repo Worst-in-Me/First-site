@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Site and stuf</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
 </head>
 <body>
     <header class="header">
@@ -264,5 +265,129 @@
             </ul>
         </div>
     </div>
+
+    <div class="review">
+        <div class="headline">
+            <div class="review__headline-title text_headline_2">Отзывы наших клиентов</div>
+            <div class="review__headline-descrition text_size_l">Что говорят о нашей компании довольные клиенты</div>
+        </div>
+        <div class="review__cards">
+            <div class="review__card">
+                <div class="review__card-img">
+                    <img src="./image/fisting.jpg" alt="">
+                </div>
+                <div class="review__card-title">VAN</div>
+                <div class="review__card-text text_size_m">Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div>
+            </div>
+            <div class="review__card">
+                <div class="review__card-img">
+                    <img src="./image/suckstion.jpg" alt="">
+                </div>
+                <div class="review__card-title">BILLY</div>
+                <div class="review__card-text text_size_m">Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div>
+            </div>
+            <div class="review__card">
+                <div class="review__card-img">
+                    <img src="./image/boynextdoor.jpg" alt="">
+                </div>
+                <div class="review__card-title">СТЕПАН МИХАЙЛОВ</div>
+                <div class="review__card-text text_size_m">Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form_question">
+        <div class="form_question__wrap">
+            <div class="form_question__title text_size_xl">Остались вопросы? Оставьте заявку на сайте</div>
+            <form action="" class="form2">
+                <div class="form2__name">
+                    <input type="text" name="Введите имя" placeholder="Введите имя">
+                </div>
+                <div class="form2__mail">
+                    <input type="text" name="mail" placeholder="mail@mail.ru">
+                </div>
+                <div class="form2__number">
+                    <input type="text" name="number" placeholder="xxx-xxx-xxx">
+                </div>
+                <div class="form2__button">
+                    <input type="submit" class="button">
+                </div>
+            </form>
+            <div class="form_question__text text_size_s">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
+        </div>       
+    </div>
+
+    <div class="contacts">
+        <div class="contacts__map">
+            <div id="map"></div>
+        </div>
+        <div class="contacts__information">
+            <div class="contacts__info">
+                <div class="contacts__info-title text_size_m">Контактная информация:</div>
+                <ul class="contacts__info-list">
+                    <li class="contacts__info-item text_size_m">Чебоксары, школьный проезд 1.</li>
+                    <li class="contacts__info-item text_size_m">E-mail: Test@yandex.ru</li>
+                    <li class="contacts__info-item text_size_m">Телефон: 8 800 300 06 00 отдела продаж</li>
+                    <li class="contacts__info-item text_size_m">Телефон: 8 800 340 06 00 отдела сбыта</li>
+                    <li class="contacts__info-item text_size_m">Контактное лицо: Степанов В.И.</li>
+                </ul>
+            </div>
+            <div class="contacts__social">
+                <div class="contacts__social-title text_size_m">Присоединяйтесь к нам в социальных сетях!</div>
+                <div class="contacts__social-icons">
+                    <div class="contacts__social-icon">
+                        <img src="./image/telegram_logo_icon_225651.png" alt="">
+                    </div>
+                    <div class="contacts__social-icon">
+                        <img src="./image/whatsapp_logo_icon_225645.png" alt="">
+                    </div>
+                    <div class="contacts__social-icon">
+                        <img src="./image/youtube_logo_icon_225646.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+            <img src="./image/logo_icon.png" alt="" class="logo">
+        <div class="footer__text">
+            <div class="footer__text-first text_size_l">ООО «СтройТрейд», 123456, г.Москва, ул. Центральная 1, офис 1 ИНН 1234567890 ОГРН 123456789012</div>
+            <div class="footer__text-second">Политика конфиденциальности</div>
+        </div>
+        <div class="footer__number">
+            <div class="footer__number-logo"></div>
+            <div class="footer__number-text text_size_l">8 800 333 22 33</div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+
+        ymaps.ready(init); 
+        var myMap;
+        
+        function init() {
+        
+            myMap = new ymaps.Map("map", {
+                center: [43.238253, 76.945465], // Координаты центра карты
+                zoom: 13 // Маштаб карты
+            }); 
+        
+            myMap.controls.add(
+                new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+            ); 
+        
+            myPlacemark = new ymaps.Placemark([43.238253,76.945465], { // Координаты метки объекта
+                balloonContent: "<div class='ya_map'>Заезжайте в гости!</div>" // Подсказка метки
+            }, {
+                preset: "twirl#redDotIcon" // Тип метки
+            });
+            
+            myMap.geoObjects.add(myPlacemark); // Добавление метки
+            myPlacemark.balloon.open(); // Открытие подсказки метки
+            
+        };
+        
+    </script>
 </body>
 </html>

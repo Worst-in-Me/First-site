@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: var(--color-light-gray);
+}
+
+.footer__text {
+    width: 43vw;
+}
