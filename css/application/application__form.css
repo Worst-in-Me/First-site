@@ -1,5 +1,5 @@
 .application__form {
-    width: 320px;
+    width: fit-content;
     height: fit-content;
     background-color: var(--color-white);
     border: 0.3em solid var(--color-orange);

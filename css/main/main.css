@@ -2,7 +2,7 @@
     min-height: 70vh;
     height: fit-content;
     width: 100%;
-    max-width: 100%;
+    box-sizing: border-box;
 
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../../image/1653559376_1.jpg);
     background-repeat: no-repeat;
@@ -41,4 +41,6 @@
 .main__title-headline {
     line-height: 80%;
 }
+
+
 

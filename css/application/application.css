@@ -2,6 +2,7 @@
 
 .application {
     width: 100%;
+    box-sizing: border-box;
     padding-top: 90px;
     padding-bottom: 90px;
 
@@ -21,4 +22,15 @@
 
 .application__headline-title {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 850px) {
+    .application {
+        flex-direction: column;
+    }
+
+    .application__form {
+        margin-top: 20px;
+    }
+    
 }

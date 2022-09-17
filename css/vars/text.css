@@ -1,23 +1,23 @@
 .text_headline_1 {
-    font-size: 4rem;
+    font-size: calc(12px + 3vw);
 }
 
 .text_headline_2 {
-    font-size: 2.5rem;
+    font-size: calc(12px + 2.1vw);
 }
 
 .text_size_s {
-    font-size: 0.8rem;
+    font-size: calc(12px + 0.1vw);
 }
 
 .text_size_m {
-    font-size: 1.1rem;
+    font-size: calc(14px + 0.3vw);
 }
 
 .text_size_l {
-    font-size: 1.3rem;
+    font-size: calc(12px + 0.7vw);
 }
 
 .text_size_xl {
-    font-size: 1.8rem;
+    font-size: calc(12px + 1vw);
 }

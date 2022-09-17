@@ -33,3 +33,13 @@
     width: 20vw;
     text-align: center;
 }
+
+@media screen and (max-width: 1250px) {
+    .special__cards {
+        flex-direction: column;
+    }
+
+    .special__card {
+        margin-top: 20px;
+    }
+}

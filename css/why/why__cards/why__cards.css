@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0 220px;
 }
 
 .why__card {
-    width: 365px;
+    width: fit-content;
     height: 330px;
     
     margin-top: 30px;
@@ -29,4 +30,11 @@
 
 .why__card-descrition {
     text-align: center;
+}
+
+@media  screen and (max-width: 1150px) {
+    .why__cards {
+        flex-direction: column;
+    }
+    
 }
