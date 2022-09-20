@@ -1,9 +1,10 @@
 .shoplist__cards {
-    width: fit-content;
+    width: 100%;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2, 570px);
     gap: 20px;
-
+    
     margin-top: 10px;
 }
 
@@ -43,6 +44,15 @@
     .shoplist__cards {
         grid-template-columns: repeat(1, 570px);
         justify-content: center;
+        justify-items: center;
+        align-items: center;
     }
     
+    .shoplist__card {
+        padding: 40px 0;
+    }
+
+    .shoplist__text {
+        width: 40vw;
+    }
 }

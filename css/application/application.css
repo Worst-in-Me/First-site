@@ -32,5 +32,11 @@
     .application__form {
         margin-top: 20px;
     }
+
+    .application__headline {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
     
 }

@@ -43,12 +43,22 @@
     width: 20vw;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 950px) {
     .popular__cards {
         flex-direction: column;
     }
 
     .popular__card {
-        margin-top: 20px;
+        margin: 20px 10px;
+
+        width: 300px;
+    }
+
+    .popular__card:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .popular__card-description {
+        width: fit-content;
     }
 }

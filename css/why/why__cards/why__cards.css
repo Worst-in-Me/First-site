@@ -1,13 +1,14 @@
 .why__cards {
+    width: 80vw;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 220px;
 }
 
 .why__card {
-    width: fit-content;
-    height: 330px;
+    width: 30%;
+    padding: 40px 0;
     
     margin-top: 30px;
 
@@ -17,24 +18,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
-.why__card div:not(:last-child) {
+.why__card-title {
+    text-align: center;
+}
+
+/* .why__card div:not(:last-child) {
     margin-bottom: 20px;
 }
 
 .why__card:not(:last-child) {
     margin-right: 30px;
-}
+} */
 
 .why__card-descrition {
     text-align: center;
 }
 
-@media  screen and (max-width: 1150px) {
+@media  screen and (max-width: 880px) {
     .why__cards {
         flex-direction: column;
+        align-items: center;
     }
     
+    .why__card {
+        width: 250px;
+    }
 }

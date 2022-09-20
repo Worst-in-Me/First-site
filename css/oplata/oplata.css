@@ -16,3 +16,10 @@
 .oplata__container:not(:last-child) {
     margin-top: 60px;
 }
+
+@media screen and (max-width: 1250px) {
+    .oplata__container {
+        width: 100%;
+    }
+    
+}
