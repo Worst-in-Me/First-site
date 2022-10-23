@@ -3,8 +3,7 @@
 .why {
     width: 100%;
 
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 50px 0 50px 0;
 
     background-color: var(--color-light-gray);
 

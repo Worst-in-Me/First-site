@@ -16,14 +16,43 @@
         <div class="burger__line"></div>
     </div>
 
+    <template id="modal">
+        <div class="popup-form-wrapper">  
+            <div class="popup-form">
+                <div class="flex-button">
+                    <div class="button-close">
+                        <div class="button-close__line"></div>
+                        <div class="button-close__line"></div>
+                    </div>
+                </div>
+                <div class="popup-form__title text_size_l">Оставить заявку</div>
+                <form action="" class="form3">
+                    <div class="form3__name">
+                        <input type="text" name="name" placeholder="Введите имя" class="form3__input">
+                    </div>
+                    <div class="form3__mail">
+                        <input type="text" name="mail" placeholder="mail@mail.ru" class="form3__input">
+                    </div>
+                    <div class="form3__number">
+                        <input type="text" name="number" placeholder="xxx-xxx-xxx" class="form3__input">
+                    </div>
+                    <div class="form3__button">
+                        <input type="submit" class="button form3__input" >
+                    </div>
+                </form>
+                <div class="popup_form__text text_size_s">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
+            </div>
+        </div>
+    </template>
+
     <header class="header">
         <div class="logo">Your logo</div>
         <div class="nav">
             <ul class="list text_size_l">
-                <li class="list__item">почему мы</li>
-                <li class="list__item">каталог</li>
-                <li class="list__item">отзывы</li>
-                <li class="list__item">контакты</li>
+                <li class="list__item"><a href="#why">почему мы</a></li>
+                <li class="list__item"><a href="#shoplist">каталог</a></li>
+                <li class="list__item"><a href="#review">отзывы</a></li>
+                <li class="list__item"><a href="#contacts">контакты</a></li>
             </ul>
             <div class="num text_size_l">
                 <img src="./image/phone.png" alt="" class="num__img">
@@ -56,7 +85,7 @@
                 <div class="popular__card-title text_size_l">FISTING</div>
                 <div class="popular__card-description">Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</div>
                 <div class="popular__card-price text_size_l">300$</div>
-                <div class="popular__card-button button">Купить</div>
+                <div class="popular__card-button button button_modal">Купить</div>
             </div>
             <div class="popular__card">
                 <div class="popular__card-img">
@@ -65,7 +94,7 @@
                 <div class="popular__card-title text_size_l">SUCKTION</div>
                 <div class="popular__card-description">Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</div>
                 <div class="popular__card-price text_size_l">400$</div>
-                <div class="popular__card-button button">Купить</div>
+                <div class="popular__card-button button button_modal">Купить</div>
             </div>
             <div class="popular__card">
                 <div class="popular__card-img">
@@ -74,7 +103,7 @@
                 <div class="popular__card-title text_size_l">BOY NEXT DOOR</div>
                 <div class="popular__card-description">Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</div>
                 <div class="popular__card-price text_size_l">500$</div>
-                <div class="popular__card-button button">Купить</div>
+                <div class="popular__card-button button button_modal">Купить</div>
             </div>
         </div>
     </div>
@@ -89,7 +118,7 @@
         </div>
     </div>
 
-    <div class="why">
+    <div class="why" id="why">
         <div class="headline">
             <div class="headline__headliner text_headline_2">Почему выбирают именно нас</div>
             <div class="popular__description text_size_l">Причины, по которым к нам обращаются многочисленные клиенты</div>
@@ -179,7 +208,7 @@
         </div>
     </div>
 
-    <div class="shoplist">
+    <div class="shoplist" id="shoplist">
         <div class="headline">
             <div class="headline__headliner text_headline_2">Каталог строительных материалов</div>
             <div class="popular__description text_size_l">В каталоге нашего магазина представлено большое количество строительных материалов</div>
@@ -274,7 +303,7 @@
         </div>
     </div>
 
-    <div class="review">
+    <div class="review" id="review">
         <div class="headline">
             <div class="review__headline-title text_headline_2">Отзывы наших клиентов</div>
             <div class="review__headline-descrition text_size_l">Что говорят о нашей компании довольные клиенты</div>
@@ -325,7 +354,7 @@
         </div>       
     </div>
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div id="map"></div>
         <div class="contacts__information">
             <div class="contacts__info">
@@ -356,14 +385,15 @@
     </div>
 
     <footer class="footer">
-            <img src="./image/logo_icon.png" alt="" class="logo">
+            <div class="logo">Your Logo</div>
         <div class="footer__text">
-            <div class="footer__text-first text_size_l">ООО «СтройТрейд», 123456, г.Москва, ул. Центральная 1, офис 1 ИНН 1234567890 ОГРН 123456789012</div>
+            <div class="footer__text-first text_size_m">ООО «СтройТрейд», 123456, г.Москва, ул. Центральная 1, офис 1 ИНН 1234567890 ОГРН 123456789012</div>
             <div class="footer__text-second">Политика конфиденциальности</div>
         </div>
         <div class="footer__number">
             <div class="footer__number-logo"></div>
-            <div class="footer__number-text text_size_l">8 800 333 22 33</div>
+            <div class="footer__number-text text_size_m">8 800 333 22 33</div>
+            <div class="footer__number-text text_size_s">Звонок по России бесплатный</div>
         </div>
     </footer>
 
@@ -396,5 +426,6 @@
         
     </script>
     <script type="text/javascript" src="./js/burger.js"></script>
+    <script type="text/javascript" src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .application__form {
-    width: fit-content;
+    width: 400px;
     height: fit-content;
     background-color: var(--color-white);
     border: 0.3em solid var(--color-orange);
@@ -26,6 +26,7 @@
 .form1 input{
     width: 100%;
     padding: 15px 0 15px 15px;
+    box-sizing: border-box;
 }
 
 .form1__name {

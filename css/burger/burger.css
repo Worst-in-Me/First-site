@@ -8,6 +8,7 @@
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 1;
 
     background-color: var(--color-white);
 
@@ -32,6 +33,26 @@
 @media screen and (max-width: 800px) {
     .burger {
         display: flex;
+    }
+
+    .burger__line {
+        transition: all linear 0.2s;
+    }
+
+    .burger_active .burger__line:nth-child(1) {
+        position: relative;
+        top: 8px;
+        transform: rotate(135deg);
+    }
+
+    .burger_active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger_active .burger__line:nth-child(3) {
+        position: relative;
+        bottom: 8px;
+        transform: rotate(-135deg);
     }
     
 }
